@@ -116,7 +116,7 @@ class _LogViewState extends State<LogView> {
                   const SizedBox(width: 10),
                   Text(log.category.toUpperCase(), style: TextStyle(color: _getCategoryColor(log.category), fontWeight: FontWeight.bold)),
                   const Spacer(),
-                  // [BARU] Menampilkan Nama Author di header dialog
+                  // Menampilkan Nama Author di header dialog
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(color: Colors.white.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(12)),

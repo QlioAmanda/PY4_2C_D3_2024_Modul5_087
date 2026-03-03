@@ -7,7 +7,7 @@ class LogModel {
   final String date;
   final String description;
   final String category;
-  final String author; // [BARU] Menambahkan pembuat catatan
+  final String author; // Menambahkan pembuat catatan
 
   LogModel({
     this.id,
@@ -15,7 +15,7 @@ class LogModel {
     required this.date,
     required this.description,
     required this.category,
-    required this.author, // [BARU] Wajib diisi saat membuat LogModel
+    required this.author, // Wajib diisi saat membuat LogModel
   });
 
   // Konversi dari Cloud (BSON) ke Aplikasi
@@ -26,7 +26,7 @@ class LogModel {
       date: map['date'] ?? '',
       description: map['description'] ?? '',
       category: map['category'] ?? 'Pekerjaan',
-      author: map['author'] ?? 'Unknown', // [BARU] Ambil dari Mongo, default 'Unknown' jika kosong
+      author: map['author'] ?? 'Unknown', //Ambil dari Mongo, default 'Unknown' jika kosong
     );
   }
 
@@ -38,7 +38,7 @@ class LogModel {
       'date': date,
       'description': description,
       'category': category,
-      'author': author, // [BARU] Simpan ke Mongo
+      'author': author, // Simpan ke Mongo
     };
   }
 }
